@@ -48,7 +48,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "command-exists": "^1.2.8",
-    "commander": "^4.1.1",
+    "commander": "^5.0.0",
     "console.table": "^0.10.0",
     "glob": "^7.1.6",
     "is-valid-path": "^0.1.1",
