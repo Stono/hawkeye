@@ -56,7 +56,7 @@ RUN mkdir $OWASP_DEP_FOLDER && cd $OWASP_DEP_FOLDER && \
 ENV PATH $OWASP_DEP_FOLDER/dependency-check/bin:$PATH
 
 RUN cd /usr/local/bin && \
-    wget --quiet https://get.sensiolabs.org/security-checker.phar && \
+    wget --quiet https://www.laravel-enlightn.com/security-checker.phar && \
     chmod +x security-checker.phar
 
 COPY --from=cargo-audit-build /home/rust/bin/ /usr/local/bin/
