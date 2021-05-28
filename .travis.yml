@@ -3,10 +3,17 @@ services:
 language: node_js
 node_js:
 - 10
+env:
+- DO_SELF_SCAN=false
+- DO_SELF_SCAN=true
+matrix:
+  allow_failures:
+  - env: DO_SELF_SCAN=true
 notifications:
   email: false
 script:
 - npm test
+- if [ ${DO_SELF_SCAN} == true ]; then bin/hawkeye scan; fi
 deploy:
 - provider: script
   script: bash scripts/deploy.sh

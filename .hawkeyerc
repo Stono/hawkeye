@@ -1,0 +1,6 @@
+{
+  "all": true,
+  "modules": ["all"],
+  "failOn": "low",
+  "showCode": true
+}

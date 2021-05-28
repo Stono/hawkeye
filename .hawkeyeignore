@@ -1,0 +1,8 @@
+#All tests
+/__tests__/
+
+# files-contents detects `Private key in file` in pattern definition
+lib/modules/files-contents/data.js
+
+# JS Standard is dev dependency - don't really care about it
+node-npmoutdated-standard-[1-9]
